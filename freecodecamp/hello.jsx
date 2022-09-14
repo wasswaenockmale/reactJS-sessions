@@ -1,0 +1,1 @@
+const hello = <h1>Hello react</h1>
