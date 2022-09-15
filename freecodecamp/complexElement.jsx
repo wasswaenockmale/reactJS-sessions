@@ -5,5 +5,6 @@ const JSX = <div>
 <li>h1 element tag</li>
 <li>p element tag</li>
 <li>unordered list tag</li>
+{/*This is how they write comments in reactJS */}
 </ul>
 </div>
