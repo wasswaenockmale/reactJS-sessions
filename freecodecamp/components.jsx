@@ -36,3 +36,7 @@ class ParentComp extends React.Component{
         </div>
     }
 }
+
+// rendering react component to the reactDom is alittle different
+// ReactDOM.render(<componentToRender/>, targetNode)
+ReactDom.render(<ParentComp/>, document.getElementById("div-id"))
