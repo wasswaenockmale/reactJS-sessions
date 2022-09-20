@@ -67,3 +67,33 @@ class Enock extends React.Component{
         )
     }
 }
+
+// Understanding the component composition in react 
+// This is one way of creating complex user interfaces 
+// I am creating a stateless component.
+const Heading_3 = ()=>{
+    return(
+        <div>
+            <h3>I am heading 3, child tag</h3>
+        </div>
+    )
+}
+
+// I am now creating a react component using the ES6 SyntaxError. 
+class ParentComponent extends React.Component{
+    constructor(props){
+        super(props);
+    }
+
+    render(){
+        return(
+            <div className="parent">
+                <h1>This is the parent component.</h1>
+                {/*Below, is the component composition example.*/}
+                <Heading_3/>
+            </div>
+        )
+    }
+}
+
+
