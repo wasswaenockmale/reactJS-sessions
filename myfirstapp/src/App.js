@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
+// This means that this is a stateless component.
 function App() {
   return (
     <div className="App" id='main-element'>
