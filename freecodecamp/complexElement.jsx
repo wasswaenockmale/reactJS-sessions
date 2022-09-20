@@ -8,3 +8,8 @@ const JSX = <div>
 {/*This is how they write comments in reactJS */}
 </ul>
 </div>
+
+const JXS = <div><p>This is gonna be rendered with ReactDOM.render(componentToRender, targetNode)</p></div>
+
+// Forexample, if there is a div node with an id='example-challenge'
+ReactDOM.render(JXS, document.getElementById("example-challenge"))
