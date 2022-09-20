@@ -46,3 +46,24 @@ const DemoComponent = function(){
         </div>
     );
 }
+
+/**
+ * Another way to create a component in react is with the ES6 class syntax. 
+ * I have designed a class called Enock for farther understanding of the concept.
+ */
+class Enock extends React.Component{
+    constructor(props){
+        super(props);
+    }
+
+    render(){
+        return (
+            <div>
+                <h1>Another way of creating a component.</h1>
+                <p>This way, the class extends a React.Component class, so that, 
+                    it has access to all react features.
+                </p>
+            </div>
+        )
+    }
+}
