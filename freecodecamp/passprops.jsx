@@ -13,7 +13,15 @@ const Now = (props)=>{
         </p>
     </div>
 }
-
+// Trying to use lists in props.
+const List = (props)=>{
+    return(
+        <div>
+            {/* The code below will join all the items in the list to one sentence */}
+            <p>{props.task.join(", ")}</p>
+        </div>
+    )
+}
 // This is the final component.
 // It's a class component 
 class ParentComponent extends React.Component{
@@ -28,7 +36,10 @@ class ParentComponent extends React.Component{
                 {/* In the statements below, I have passed data to the components.  */}
                 <Welcome user="Enock Male"/>
                 <Now date={Date()}/>
+                {/* passing a list in a props */}
+                <List task={["Programming","Watch a movie","Evening stroll"]}/> 
             </div>
         )
     }
 }
+
