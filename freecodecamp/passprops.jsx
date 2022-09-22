@@ -43,3 +43,16 @@ class ParentComponent extends React.Component{
     }
 }
 
+// Setting default props in react
+// below is the ShoppingCart component
+// The component below is stateless.
+const ShoppingCart = (props)=>{
+    return(
+        <div>
+            <h4>Shopping cart component</h4>
+        </div>
+    )
+}
+
+// Now, I am writing default props to the above ShoppingCart component.
+ShoppingCart.defaultProps = {items:0}
