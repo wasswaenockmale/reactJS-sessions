@@ -56,3 +56,20 @@ const ShoppingCart = (props)=>{
 
 // Now, I am writing default props to the above ShoppingCart component.
 ShoppingCart.defaultProps = {items:0}
+
+// How to set the PropTypes
+/**
+ * React provides useful type-checking features to verify that
+ * components receive props of the correct type. For example, your 
+ * application makes an API call to retrieve data that you expect to be 
+ * in an array, which is then passed to a component as a prop. You can 
+ * set propTypes on your component to require the data to be of type array.
+ * This will throw a useful warning when the data is of any other type.
+ * 
+ * Note: As of React v15.5.0, PropTypes is imported independently from React, 
+ * like this: import PropTypes from 'prop-types';
+ */
+// The syntax is as below
+// MyComponent.propTypes = {propKey: PropTypes.type.isRequired}
+import PropTypes from 'prop-types'
+ShoppingCart.propTypes = {handleClick: PropTypes.func.isRequired}
