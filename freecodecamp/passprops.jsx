@@ -89,3 +89,5 @@ ShoppingCart.propTypes = {handleClick: PropTypes.func.isRequired}
  * 
  * }
  */
+
+// 4th oct is kevin's birthday
