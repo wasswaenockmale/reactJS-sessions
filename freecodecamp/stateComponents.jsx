@@ -13,6 +13,9 @@ class MyComponent extends React.Component{
     render(){
         return(
             <div>
+                {/* This is how they render the state props to the jsx.
+                But the state can be sent to another child component through the props
+                 */}
                 <p>{this.state.firstName}</p>
             </div>
         )
