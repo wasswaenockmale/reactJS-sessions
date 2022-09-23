@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 // I have imported react to this file.
 import React from 'react'
+// import '/sytle.css'
 import Second from './Header';
 
 import './App.css';
@@ -24,6 +25,7 @@ export default class App extends React.Component {
         <Second />
         <button onClick={this.handleClick}>Click Me</button>
         <h1>{this.state.name}</h1>
+        <Second/>
       </div>
     );
   }
