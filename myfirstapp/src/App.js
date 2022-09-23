@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 // I have imported react to this file.
 import React from 'react'
+import Second from './Header';
 
 import './App.css';
 
@@ -20,6 +21,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
+        <Second />
         <button onClick={this.handleClick}>Click Me</button>
         <h1>{this.state.name}</h1>
       </div>
