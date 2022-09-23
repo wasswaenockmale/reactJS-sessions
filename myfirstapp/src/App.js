@@ -8,7 +8,7 @@ export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: 'Initial State'
+      name: 'We have to work on something now'
     };
     this.handleClick = this.handleClick.bind(this);
   }
