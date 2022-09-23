@@ -9,4 +9,7 @@ function Second(props){
     )
 }
 
+// Setting a default value for the props
+Second.defaultProps = {name: "Wasswa Enock"}
+
 export default Second
