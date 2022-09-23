@@ -22,7 +22,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <Second />
+        <Second name="Nalongo Sarah"/>
         <button onClick={this.handleClick}>Click Me</button>
         <h1>{this.state.name}</h1>
         <Second/>
