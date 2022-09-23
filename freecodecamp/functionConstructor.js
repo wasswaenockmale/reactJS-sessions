@@ -4,6 +4,7 @@ function funConstructor(name, yearStarted){
 
     this.describe = ()=>{
         console.log(`${this.name} was started in ${this.yearStarted}`)
+        console.log(this)
     }
 }
 
@@ -21,6 +22,7 @@ class Country{
     // Now create a method.
     describe(){
         console.log(`${this.name} started in ${this.year}`)
+        console.log(this)
     }
 }
 
