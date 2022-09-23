@@ -14,7 +14,7 @@ export default class App extends React.Component {
   }
   handleClick() {
     // Change code below this line
-    this.setState({name: "Male"})
+    this.setState({name: "Enock"})
     // Change code above this line
   }
   render() {
