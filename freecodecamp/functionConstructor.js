@@ -11,3 +11,18 @@ function funConstructor(name, yearStarted){
 const fun = new funConstructor("Uganda", 1962)
 
 fun.describe()
+
+class Country{
+    constructor(name, year){
+        this.name = name;
+        this.year = year;
+    }
+
+    // Now create a method.
+    describe(){
+        console.log(`${this.name} started in ${this.year}`)
+    }
+}
+
+const country = new Country("kenya", 1963);
+country.describe();
