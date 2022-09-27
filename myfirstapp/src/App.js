@@ -12,7 +12,8 @@ export default class App extends React.Component {
     this.state = {
       name: 'We have to work on something now'
     };
-    this.handleClick = this.handleClick.bind(this);
+    this.handleClick = this.handleClick.bind(this); // This binds the this to the method
+    // this.myMethod = this.myMethod.bind(this)
   }
   handleClick() {
     // Change code below this line
