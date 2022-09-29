@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-side{
+    background-color: red;
+    width: 40%;
+    height: 40%;
+}
+
+.right-side{
+    background-color: green;
+    width: 40%;
+    height: 40%;
+}
