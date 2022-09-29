@@ -12,14 +12,19 @@ export default class App extends React.Component {
 
     // This is how you create a state in React.
     this.state = {
-      name: 'We have to work on something now'
+      name: 'We have to work on something now',
+      age:23,
+      Occupation: "Write your occupation here"
     };
     this.handleClick = this.handleClick.bind(this); // This binds the this to the method
     // this.myMethod = this.myMethod.bind(this)
   }
   handleClick() {
     // Change code below this line
-    this.setState({name: "Enock"})
+    this.setState({name: "Enock", 
+    age:24,
+    Occupation: "Programmer."
+  })
     // Change code above this line
   }
   render() {
