@@ -9,6 +9,8 @@ import './App.css';
 export default class App extends React.Component {
   constructor(props) {
     super(props);
+
+    // This is how you create a state in React.
     this.state = {
       name: 'We have to work on something now'
     };
