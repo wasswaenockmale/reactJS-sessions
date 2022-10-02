@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Btn from './Counter/Btn'
 import reportWebVitals from './reportWebVitals';
 import Footer from './Footer';
 
@@ -9,6 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Footer />
+    <Btn />
   </React.StrictMode>
 );
 
