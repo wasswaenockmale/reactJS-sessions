@@ -1,6 +1,7 @@
 import React from "react";
+import Counter from "./Counter";
 
-export default class Buttons extends React.Component{
+export default class Btn extends React.Component{
     constructor(props){
         super(props);
 
@@ -10,5 +11,26 @@ export default class Buttons extends React.Component{
 
         this.increment = this.increment.bind(this);
         this.decrement = this.decrement.bind(this);
+    }
+
+    increment(){
+        return this.state.counter + 1
+    }
+
+    decrement(){
+        return this.state.counter - 1
+    }
+
+    render(){
+        return(
+            <div>
+                <button>Increment</button>
+                <button>Decrement</button>
+                <button>Reset</button>
+                <div>
+                    <Counter />
+                </div>
+            </div>
+        )
     }
 }
