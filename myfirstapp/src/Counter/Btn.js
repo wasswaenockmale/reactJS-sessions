@@ -13,17 +13,19 @@ export default class Btn extends React.Component{
 
         this.increment = this.increment.bind(this);
         this.decrement = this.decrement.bind(this);
+        this.reset = this.reset.bind(this);
     }
 
     increment(){
-        this.setState(()=>{
+        return this.setState(()=>{
             let count = this.state.counter;
-            return this.state.counter = count++
+            count++
+            return {counter: count}
         })
     }
 
     decrement(){
-        this.setState(state=>{
+        return this.setState(state=>{
             let count = state.counter;
             count--
             return {counter: count}
@@ -31,7 +33,7 @@ export default class Btn extends React.Component{
     }
 
     reset(){
-        this.setState({counter: 100})
+        return this.setState({counter: 0})
     }
 
     render(){
@@ -41,7 +43,7 @@ export default class Btn extends React.Component{
                 <button onClick={this.decrement}>Decrement</button>
                 <button onClick={this.reset}>Reset</button>
                 <div>
-                    <Counter counter={this.state.counter}/>
+                    <Counter count={this.state.counter}/>
                 </div>
             </div>
         )
