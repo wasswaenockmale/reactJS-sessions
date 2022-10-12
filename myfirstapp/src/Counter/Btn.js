@@ -19,7 +19,7 @@ export default class Btn extends React.Component{
     increment(){
         return this.setState(()=>{
             let count = this.state.counter;
-            count++
+            count += 10
             return {counter: count}
         })
     }
@@ -27,8 +27,8 @@ export default class Btn extends React.Component{
     decrement(){
         return this.setState(state=>{
             let count = state.counter;
-            count--
-            return {counter: count}
+            count -= 5
+            return {counter: Math.max(count, 0)} //This will help the return values that are greater than zero
         })
     }
 
