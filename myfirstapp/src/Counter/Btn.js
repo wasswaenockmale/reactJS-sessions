@@ -38,7 +38,7 @@ export default class Btn extends React.Component{
 
     render(){
         return(
-            <div>
+            <div className="container">
                 <button onClick={this.increment}>Increment</button>
                 <button onClick={this.decrement}>Decrement</button>
                 <button onClick={this.reset}>Reset</button>
