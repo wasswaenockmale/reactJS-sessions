@@ -45,14 +45,14 @@ export default class Btn extends React.Component{
      * Simply return an updated state.input
      */
     handleChange(event){
-        return this.setState(state=>{
-            return state.input = event.target.value;
+        return this.setState({
+            input:event.target.value
         })
     }
     render(){
         return(
             <div className="container">
-                <input placeholder="Enter something here" onChange={this.handleChange}></input>
+                <input placeholder="Enter something here" value={this.state.input} onChange={this.handleChange}></input>
                 <button onClick={this.increment}>Increment</button>
                 <button onClick={this.decrement}>Decrement</button>
                 <button onClick={this.reset}>Reset</button>
