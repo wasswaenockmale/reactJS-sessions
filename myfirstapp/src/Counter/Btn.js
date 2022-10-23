@@ -71,7 +71,13 @@ export default class Btn extends React.Component{
          * It's also best to add any event listener attached to 
          * any functionality here in the componentDidMount() lifecycle method.
          */
+        this.handleChange();
 
+    }
+
+    shouldComponentUpdate(){
+        // This lifecycle method updates the UI. It re-renders when props change.
+        
     }
     render(){
         return(
