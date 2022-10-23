@@ -59,6 +59,12 @@ export default class Btn extends React.Component{
             submit:this.state.input
         })
     }
+
+    componentDidMount(){
+        // this method is a component lifeCycle method.
+        // It is best to call api, and make communication to 
+        // the server here.
+    }
     render(){
         return(
             <div className="container">
