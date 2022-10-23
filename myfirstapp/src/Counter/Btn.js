@@ -8,6 +8,7 @@ export default class Btn extends React.Component{
         super(props);
 
         this.state = {
+            num:23,
             counter: 0,
             input:"",
             submit:""
@@ -64,6 +65,13 @@ export default class Btn extends React.Component{
         // this method is a component lifeCycle method.
         // It is best to call api, and make communication to 
         // the server here.
+        this.setState({num:90});
+
+        /**
+         * It's also best to add any event listener attached to 
+         * any functionality here in the componentDidMount() lifecycle method.
+         */
+
     }
     render(){
         return(
