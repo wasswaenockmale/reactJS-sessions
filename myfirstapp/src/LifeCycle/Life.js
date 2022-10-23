@@ -1,3 +1,4 @@
+import React from "react";
 export default class Life extends React.Component{
     constructor(props){
         super(props);
@@ -5,7 +6,10 @@ export default class Life extends React.Component{
 
     shouldComponentUpdate(){
         console.log("Should I update!");
-        return true;
+        // return true;
+        if(this.props.value%2 != 0){
+            return true
+        }
     }
 
     componentDidUpdate(){
