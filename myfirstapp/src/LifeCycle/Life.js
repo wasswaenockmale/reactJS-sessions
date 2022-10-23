@@ -1,4 +1,9 @@
 import React from "react";
+export const styles = {
+    color: "purple",
+    fontSize: 89,
+    border:"2px solid purple"
+}
 export default class Life extends React.Component{
     constructor(props){
         super(props);
@@ -18,6 +23,6 @@ export default class Life extends React.Component{
     }
 
     render(){
-        return <h1 style={{color: "green", fontSize:72}}>{this.props.value}</h1>
+        return <h1 style={styles} >{this.props.value}</h1>
     }
 }

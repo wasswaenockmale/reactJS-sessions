@@ -1,5 +1,8 @@
 import React from "react";
 import Life from "./Life";
+import { styles } from "./Life";
+
+
 export default class Controller extends React.Component{
     constructor(props){
         super(props);
@@ -17,10 +20,21 @@ export default class Controller extends React.Component{
         }));
     }
 
+    componentDidMount(){
+        console.log("I love programming")
+    }
     render(){
+        function Employee(fname, lname){
+            this.fname = fname;
+            this.lname = lname;
+
+            return this.fname + " " +this.lname;
+        }
+
+        
         return(
             <div>
-                <button style={{color: "white", background:"red"}} onClick={this.addValue}>Add</button>
+                <button onClick={this.addValue}>Add</button>
                 <Life value={this.state.value}/>
             </div>
         )
