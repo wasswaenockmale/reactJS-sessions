@@ -12,12 +12,12 @@ export default class Life extends React.Component{
         }
         return false
     }
-    
+
     componentDidUpdate(){
         console.log("Component re-rendered.")
     }
 
     render(){
-        return <h1>{this.props.value}</h1>
+        return <h1 style={{color: "green", fontSize:72}}>{this.props.value}</h1>
     }
 }

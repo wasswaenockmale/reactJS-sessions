@@ -20,7 +20,7 @@ export default class Controller extends React.Component{
     render(){
         return(
             <div>
-                <button onClick={this.addValue}>Add</button>
+                <button style={{color: "white", background:"red"}} onClick={this.addValue}>Add</button>
                 <Life value={this.state.value}/>
             </div>
         )
