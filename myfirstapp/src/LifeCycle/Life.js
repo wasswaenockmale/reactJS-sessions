@@ -4,14 +4,15 @@ export default class Life extends React.Component{
         super(props);
     }
 
-    shouldComponentUpdate(){
+    shouldComponentUpdate(nextProps, nextState){
         console.log("Should I update!");
         // return true;
-        if(this.props.value%2 != 0){
-            return true
+        if(nextProps.value%2 == 0){
+            return true;
         }
+        return false
     }
-
+    
     componentDidUpdate(){
         console.log("Component re-rendered.")
     }
