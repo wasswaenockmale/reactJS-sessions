@@ -8,7 +8,8 @@ export default class Controller extends React.Component{
         super(props);
 
         this.state = {
-            value:0
+            value:0,
+            display: true
         }
 
         this.addValue = this.addValue.bind(this)
@@ -16,7 +17,8 @@ export default class Controller extends React.Component{
 
     addValue(){
         this.setState(state=>({
-            value: state.value + 1
+            value: state.value + 1,
+            display: state.display == true?false:true
         }));
     }
 
@@ -36,6 +38,8 @@ export default class Controller extends React.Component{
             <div>
                 <button onClick={this.addValue}>Add</button>
                 <Life value={this.state.value}/>
+                {/* {condition && return} */}
+                {this.state.display && <h1>Displayed!</h1>}
             </div>
         )
     }
