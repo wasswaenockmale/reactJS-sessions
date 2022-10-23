@@ -5,12 +5,14 @@ import './index.css';
 import Btn from './Counter/Btn'
 import reportWebVitals from './reportWebVitals';
 // import Footer from './Footer';
+import Controller from './LifeCycle/Controller';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <Footer /> */}
-    <Btn />
+    {/* <Btn /> */}
+    <Controller />
   </React.StrictMode>
 );
 
