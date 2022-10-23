@@ -1,6 +1,6 @@
+import React from "react";
 import Life from "./Life";
-
-class Controller extends React.Component{
+export default class Controller extends React.Component{
     constructor(props){
         super(props);
 
@@ -20,7 +20,7 @@ class Controller extends React.Component{
     render(){
         return(
             <div>
-                <button>Add</button>
+                <button onClick={this.addValue}>Add</button>
                 <Life value={this.state.value}/>
             </div>
         )
