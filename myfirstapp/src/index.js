@@ -7,11 +7,13 @@ import reportWebVitals from './reportWebVitals';
 // import Footer from './Footer';
 import Controller from './LifeCycle/Controller';
 
+
+// const greeting = <h1>Hello, world</h1>
+// const ele = React.createElement("h1",{},"Hello, world")
+// const ele2 = React.createElement("div",{id:"root1",className:"one two three"},ele)
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <Footer /> */}
-    {/* <Btn /> */}
     <Controller />
   </React.StrictMode>
 );
