@@ -1,6 +1,5 @@
 import React from "react";
 import Life from "./Life";
-import { styles } from "./Life";
 
 
 export default class Controller extends React.Component{
