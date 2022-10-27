@@ -3,9 +3,19 @@ import './Footer.css'
 
 export default class Footer extends React.Component{
     constructor(props){
-        super(props)
+        super(props);
+        this.state = {
+            more:"",
+            two: "",
+            number: 0
+        }
+
+        this.changeEverything = this.changeEverything.bind(this)
     }
 
+    changeEverything(){
+        this.setState({more:"Enock",two:"Male",number:24})
+    }
     render(){
         return(
             <div className="container">
