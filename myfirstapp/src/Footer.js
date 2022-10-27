@@ -11,6 +11,15 @@ export default class Footer extends React.Component{
         }
 
         this.changeEverything = this.changeEverything.bind(this)
+        this.secondChange = this.secondChange.bind(this)
+    }
+
+    secondChange(){
+        return(
+            <div>
+                <p>This is the footer for the project.</p>
+            </div>
+        )
     }
 
     changeEverything(){
