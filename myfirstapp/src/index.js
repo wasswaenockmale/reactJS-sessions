@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-// import App from './App';
-import Btn from './Counter/Btn'
+// import './index.css';
+import "./css/index.css"
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-// import Footer from './Footer';
-import Controller from './LifeCycle/Controller';
 
 
 // const greeting = <h1>Hello, world</h1>
@@ -14,7 +12,7 @@ import Controller from './LifeCycle/Controller';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Controller />
+    <App />
   </React.StrictMode>
 );
 
