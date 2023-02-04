@@ -1,3 +1,5 @@
+import Notes from "./components/Notes";
+
 function App(props) {
 
   const { notes } = props;
@@ -6,7 +8,9 @@ function App(props) {
     <div>
       <h1>Notes</h1>
       <ul>
-        {notes.map(elem => <li>{elem.content}</li>)}
+        {notes.map(note => 
+        <Notes key={note.id} note={note}/>
+        )}
       </ul>
     </div>
   );
