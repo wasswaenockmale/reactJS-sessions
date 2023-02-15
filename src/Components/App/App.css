@@ -1,0 +1,23 @@
+.app-header{
+    width: 98vw;
+    height: 10%;
+    padding: 5px;
+    background-color: black;
+    margin: 0;
+}
+
+.header-text{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.body-text{
+    text-align: center;
+    opacity: 0.5;
+}
+
+.app{
+    text-align: center;
+    margin: 0;
+}
